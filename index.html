@@ -150,50 +150,75 @@
 <form action="index.html" method="get">
 
     <div class="DAN">
-                <label for="name">
-                Name
-                </label>
-                
-                <input type="text" id="name" requierd>
-                </div>
+        <input 
+        id="name" 
+        type="text" 
+        placeholder="Enter your name" 
+        required>
 
-                <div>
-                <label for="phone">
-                    Phone
-                </label>
+      <!-- Email -->
+      <label id="email-label" for="email">Email:</label>
+      <input 
+        id="email" 
+        type="email" 
+        placeholder="Enter your email" 
+        required>
 
-                <input type="tel" id="phone" min="10" max="10" requierd>
-               </div>
-                
-               <div>
-                <label for="address">
-                  Address
-                </label>
+      <!-- Number -->
+      <label id="number-label" for="number">Age:</label>
+      <input 
+        id="number" 
+        type="number" 
+        min="18" 
+        max="99" 
+        placeholder="Enter your age" 
+        required>
 
-        <input  type="text" id="address" requierd>
-        </div>
-    
-        <fieldset>
-            <label for="dan">Gender</label>   
-     <label><input type="radio" name="gender">Female </label>
-     <label><input type="radio" name="gender">Male </label>
-        </fieldset>    
+      <!-- Dropdown -->
+      <label for="dropdown">How did you hear about us?</label>
+      <select id="dropdown" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="friend">Friend</option>
+        <option value="ad">Advertisement</option>
+      </select>
 
-<fieldset>
-    <label for="DAN">Business Category</label>
-<label><input type="checkbox" name="business">Small scale </label>
-<label><input type="checkbox" name="business">Large scale </label>
-           </fieldset>
+      <!-- Radio Buttons -->
+      <p>Would you recommend us to others?</p>
+      <label>
+        <input 
+          type="radio" 
+          name="recommend" 
+          value="yes" 
+          required> Yes
+      </label>
+      <label>
+        <input 
+          type="radio" 
+          name="recommend" 
+          value="no"> No
+      </label>
 
-<lable for="Dan"></lable>Customer Category</label>
-<select>
-    <option value="">Select one</option>
-    <option value="regular">Regular</option>
-    <option value="temporal">Temporal</option>
-</select>
-<br>
-     <div>
-<input type="submit" value="Submit">
+      <!-- Checkboxes -->
+      <p>Select your interests:</p>
+      <label>
+        <input 
+          type="checkbox" 
+          value="technology"> Technology
+      </label>
+      <label>
+        <input 
+          type="checkbox" 
+          value="health"> Health
+      </label>
+
+      <!-- Textarea -->
+      <label for="comments">Additional Comments:</label>
+      <textarea 
+        id="comments" 
+        placeholder="Write your comments here..."></textarea>
+
+      <!-- Submit Button -->
+      <button id="submit" type="submit">Submit</button>
 </div>
 
 </div>
